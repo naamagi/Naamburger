@@ -1,24 +1,4 @@
-// function addT(){
-//     const newDiv=document.querySelector("#container");
-//     const newP=document.createElement('p');
-//     newP.innerHTML='moshe';
-//     newDiv.appendChild(newP);
-// }
-
-// function remove(){
-//     const newDiv=document.querySelector("#container");
-//     const newP=document.createElement('p');
-//     newP.innerHTML='moshe';
-//     newDiv.appendChild(newP);
-// }
-
 let totalPrice = +0;
-// const lettucePrice= +2;
-// const tomatoPrice= +4;
-// const cheesePrice= +8;
-// const onionPrice= +3;
-// const picklesPrice= +4;
-// const meatPrice= +30;
 
 updateTotalPrice();
 
@@ -33,16 +13,11 @@ function add(idOfFatherElement, classNameOfNewTag, ingredientPrice) {
   const ingredientFatherDiv = document.getElementById("" + idOfFatherElement);
   const ingredientToAdd = document.createElement("div");
   ingredientToAdd.classList.add("" + classNameOfNewTag);
-  // ingredientToAdd.price=+ingredientPrice;
   ingredientFatherDiv.appendChild(ingredientToAdd);
-  // totalPrice += +ingredientToAdd.price;
   totalPrice += +ingredientPrice;
   updateTotalPrice();
   updateMinusButton(ingredientFatherDiv, "minus-" + classNameOfNewTag);
   updateAmount(idOfFatherElement);
-
-  // const buttonToEnable=document.getElementById("minus-"+classNameOfNewTag);
-  // buttonToEnable.disabled=false;
 }
 
 function remove(idOfFatherElement, elementClassName, ingredientPrice) {
@@ -56,13 +31,6 @@ function remove(idOfFatherElement, elementClassName, ingredientPrice) {
     updateTotalPrice();
     updateMinusButton(ingredientFatherDiv, "minus-" + elementClassName);
     updateAmount(idOfFatherElement);
-    // const buttonToDisable=document.getElementById("minus-"+elementClassName);
-    // if(ingredientFatherDiv.childElementCount===0){
-    //     buttonToDisable.disabled=true;
-    // }
-    // else{
-    //     buttonToDisable.disabled=false;
-    // }
   }
 }
 
@@ -71,7 +39,6 @@ function updateAmount(idOfFatherElement) {
     idOfFatherElement + "Amount"
   );
   const ingredientFatherDiv = document.getElementById("" + idOfFatherElement);
-
   ingredientAmountElement.innerText = ingredientFatherDiv.childElementCount;
 }
 
