@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naamburger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWJ-Bso5RFK_TTeSnDaIzZcrOj9UxBAOpzSA&usqp=CAU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Monoton&family=Ruthie&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1 id="title" class="header basicAlignment">Naamburger</h1>
+        <div class="main">
+            <background>
+                <h2 class="basicAlignment">Design your own burger!</h2>
+
+                <div class="burger basicAlignment" id="container" class="basicAlignment">
+                    <div class="upperbread"></div>
+                    <div id="lettuce"></div>
+                    <div id="tomato"></div>
+                    <div id="cheese"></div>
+                    <div id="onion"></div>
+                    <div id="pickles"></div>
+                    <div id="meat"></div>
+                    <div class="lowerbread"></div>
+                </div>
+
+                <div class="ingredients">
+                    <div class="ingredient">
+                        <button onclick="add(`lettuce`,`lettuce`,2)" id="plus-lettuce" class="basicAlignment">➕</button>
+                        <span>Lettuce </span>
+                        <span>Price: 2&#8362; </span>
+                        <button onclick="remove(`lettuce`,`lettuce`,2)" id="minus-lettuce"
+                            class="basicAlignment">➖</button>
+                        <span id="lettuceAmount" class="ingredientAmount basicAlignment">0</span>
+
+                    </div>
+                    <div class="ingredient">
+                        <button onclick="add(`pickles`,`pickles`,4)" id="plus-pickles" class="basicAlignment">➕</button>
+                        <span>Pickles</span>
+                        <span>Price: 4&#8362; </span>
+                        <button onclick="remove(`pickles`,`pickles`,4)" id="minus-pickles"
+                            class="basicAlignment">➖</button>
+                        <span id="picklesAmount" class="ingredientAmount basicAlignment">0</span>
+
+                    </div>
+                    <div class="ingredient">
+                        <button onclick="add(`onion`,`onion`,3)" id="plus-onion" class="basicAlignment">➕</button>
+                        <span>Onion</span>
+                        <span>Price: 3&#8362; </span>
+                        <button onclick="remove(`onion`,`onion`,3)" id="minus-onion" class="basicAlignment">➖</button>
+                        <span id="onionAmount" class="ingredientAmount basicAlignment">0</span>
+
+                    </div>
+                    <div class="ingredient">
+                        <button onclick="add(`cheese`,`cheese`,8)" id="plus-cheese" class="basicAlignment">➕</button>
+                        <span>Cheese</span>
+                        <span>Price: 8&#8362; </span>
+                        <button onclick="remove(`cheese`,`cheese`,8)" id="minus-cheese"
+                            class="basicAlignment">➖</button>
+                        <span id="cheeseAmount" class="ingredientAmount basicAlignment">0</span>
+
+                    </div>
+                    <div class="ingredient">
+                        <button onclick="add(`meat`,`meat`,30)" id="plus-meat" class="basicAlignment">➕</button>
+                        <span>Meat</span>
+                        <span>Price: 30&#8362; </span>
+                        <button onclick="remove(`meat`,`meat`,30)" id="minus-meat" class="basicAlignment">➖</button>
+                        <span id="meatAmount" class="ingredientAmount basicAlignment">0</span>
+
+                    </div>
+                    <div class="ingredient">
+                        <button onclick="add(`tomato`,`tomato`,4)" id="plus-tomato" class="basicAlignment">➕</button>
+                        <span>Tomato</span>
+                        <span>Price: 4&#8362; </span>
+                        <button onclick="remove(`tomato`,`tomato`,4)" id="minus-tomato"
+                            class="basicAlignment">➖</button>
+                        <span id="tomatoAmount" class="ingredientAmount basicAlignment">0</span>
+
+                    </div>
+                    <hr>
+                    </hr>
+                    <span id="totalPrice"></span>
+                </div>
+            </background>
+        </div>
+        <div class="footer ">
+            <button class="basicAlignment">Contact us</button>
+            <button class="basicAlignment">About us</button>
+            <button class="basicAlignment">Recommendations</button>
+            <button class="basicAlignment">Jobs</button>
+        </div>
+    </div>
+    <script src="site.js"></script>
+</body>
+
+</html>
