@@ -1,4 +1,7 @@
-let totalPrice = +0;
+
+
+
+let totalPrice = +10;
 
 updateTotalPrice();
 
