@@ -8,7 +8,7 @@ This application allows you to compose your own hamburger according to your flav
 
 https://affectionate-leakey-0fec75.netlify.app/
 
-![naamburger page](./naamburger.png)
+![naamburger page](./naamburger.jpeg)
 
 ------------------------------------------------
 ## Contributors
